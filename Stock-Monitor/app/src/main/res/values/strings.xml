@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stock-Monitor</string>
+    <string name="lbl_StockSym">Sym</string>
+    <string name="price_lbl">0.0</string>
+    <string name="percentageChange">0.0</string>
+    <string name="companyName_lbl">Company Name</string>
+</resources>
