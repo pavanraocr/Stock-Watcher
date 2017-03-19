@@ -6,13 +6,18 @@ package com.example.pavan.stock_monitor;
 
 public class Stocks {
     private String companySym;
+    private String companyName;
     private double stockPrice;
     private double stockChangePrice;
     private double stockChangePercentage;
     private String percentageChangeIndecator;
 
+    public Stocks() {
+    }
+
     public Stocks(String companySym, double stockPrice, String percentageChangeIndecator, double stockChangePrice, double stockChangePercentage) {
         this.companySym = companySym;
+        this.companyName = companySym;
         this.stockPrice = stockPrice;
         this.percentageChangeIndecator = percentageChangeIndecator;
         this.stockChangePrice = stockChangePrice;
@@ -60,4 +65,17 @@ public class Stocks {
     public void setPercentageChangeIndecator(String percentageChangeIndecator) {
         this.percentageChangeIndecator = percentageChangeIndecator;
     }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String serializeToNameListItemFormat(){
+        return companySym + "-" + companyName;
+    }
+
 }

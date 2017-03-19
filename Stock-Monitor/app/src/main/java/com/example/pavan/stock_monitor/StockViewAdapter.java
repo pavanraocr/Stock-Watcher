@@ -15,21 +15,23 @@ import java.util.List;
 public class StockViewAdapter extends RecyclerView.Adapter<StockViewHolder> {
     //never assign a new memory for this variable
     private List<Stocks> stocksList;
+    private MainActivity ma;
 
     /**
      * Sets the adapter with the list of data that is use to set the recycler view
      * @param stocksList - list of objects of type Stocks
      */
-    public StockViewAdapter(List<Stocks> stocksList) {
+    public StockViewAdapter(List<Stocks> stocksList, MainActivity mainAct) {
         this.stocksList = stocksList;
+        ma = mainAct;
     }
 
     @Override
     public StockViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.stock_items, parent, false);
-
-        //TODO - set the onClick and onLongClick Listenters
+        v.setOnClickListener(ma);
+        v.setOnLongClickListener(ma);
 
         return new StockViewHolder(v);
     }
@@ -39,6 +41,7 @@ public class StockViewAdapter extends RecyclerView.Adapter<StockViewHolder> {
         Stocks stock = stocksList.get(position);
 
         holder.companySym.setText(stock.getCompanySym());
+        holder.companyName.setText(stock.getCompanyName());
         holder.stockPrice.setText(stock.getStockPriceString());
         holder.percentageChange.setText(stock.getStockChangeString());
         holder.percentageChangeIndecator.setText(stock.getPercentageChangeIndecator());
@@ -52,7 +55,6 @@ public class StockViewAdapter extends RecyclerView.Adapter<StockViewHolder> {
      * @param stock
      */
     private void updateViewElementProperties(StockViewHolder holder, Stocks stock) {
-        //TODO - extend the code below to set the color of the text and arrowheads based on the change price
 
         int dynamicColor;
 

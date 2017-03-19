@@ -7,4 +7,24 @@
     <string name="imageDescriptor">stock value change direction</string>
     <string name="downSolidArrow">▼</string>
     <string name="upSolidArrow">&#x25b2;</string>
+    <string name="name_list_key_company_name">company_name</string>
+    <string name="name_list_key_company_sym">company_symbol</string>
+    <string name="lbl_add_stock">Add Stock</string>
+    <string name="lbl_name_list_msg">Please enter a Stock Symbol:</string>
+    <string name="lbl_name_list_ttl">Stock Selection</string>
+    <string name="tit_name_lst_multiple">Make a selection</string>
+    <string name="btn_name_lst_mult_lbl">Nevermind</string>
+    <string name="stock_detail_key_company_sym">t</string>
+    <string name="stock_detail_key_stock_price">l</string>
+    <string name="stock_detail_key_change_price">c</string>
+    <string name="stock_detail_key_change_price_perc">cp</string>
+    <string name="dialog_ttl_sym_not_found">"Symbol Not Found: "</string>
+    <string name="dialog_msg_no_data">Data for stock symbol</string>
+    <string name="dialog_ttl_Dup_stock">Duplicate Stocks</string>
+    <string name="dialog_ttl_No_Network">No Network Connection</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="dialog_ttl_delete_stock">Delete Stock</string>
+    <string name="dialog_msg_delete_stock">"Delete Stock Symbol "</string>
+    <string name="btn_delete">DELETE</string>
 </resources>
