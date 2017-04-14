@@ -2,11 +2,7 @@ Stock Watcher
 =============
 
 # **Overview**
-Android application that is capable of tracking the change in stock price of different companies.
-User can add or delete any company. There is a swipe refresh feature which will update all the
-values of montiored stocks. It is visually apealing as the color of stocks change based on direction of
-the change in respective stocks. If there is an increase in the value of stocks it turns green and if the stock price
-of a particular company is droping then it turns red along with a change in the direction of an arrow head.
+Android application that is capable of tracking the change in stock price of different companies. The user can add or delete any company. There is a swipe refresh feature which will update all the values of monitored stocks. It is visually appealing as the color of stocks changes based on the direction of the change in respective stocks. If there is an increase in the value of stocks it turns green and if the stock price of a particular company is dropping then it turns red along with a change in the direction of an arrowhead.
 
 # **Requirements**
 * Android OS Lollipop or higher
