@@ -25,7 +25,7 @@ public class DataDownloader extends AsyncTask<Integer, Void, Integer> {
     private String TAG = "NameDownloader";
     private List<Stocks> nameList;
     private MainActivity mainAct;
-    private final String apiKey = "f157c1d447e09d737a64fd963e0b9a5ad725ad7b";
+    private final String apiKey = "****"; //TODO enter your personal API KEY
     private String baseURLForNameSearchAPI = "http://stocksearchapi.com/api";//"/?api_key=";
     private String baseURLForStockDetailsAPI = "http://finance.google.com/finance/info";
     private JsonReaderAndWriter readWriteObj = new JsonReaderAndWriter();
